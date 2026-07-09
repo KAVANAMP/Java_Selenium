@@ -1,0 +1,56 @@
+Day 14
+-------
+
+INHERITANCE:
+-----------
+Acquiring all the properties(variables) and behaviour(methods) from one class to another class is called inheritance.
+
+
+Objective
+.........
+1)re-usability
+2)Avoid duplication
+
+types
+-----
+1)single -> 1 parent and 1 child
+2)multi level ->1 parent child grandchild 
+3)hierarchy ->1 parent multiple child
+4)multiple ->multiple parents single child, it is implement using interfaces,      not class
+
+NOTE:Why Doesn't Java Support Multiple Inheritance?
+
+The main reason is to avoid the Diamond Problem.-or-Java cannot decide automatically. This ambiguity is called the Diamond Problem.
+To avoid this confusion, Java does not support multiple inheritance with classes.
+
+extends keyword not support 2 class at a time it will cause ambiguity bcs of duplicate method
+
+
+
+
+Interview Questions
+1. Does Java support multiple inheritance?
+With classes: ❌ No
+With interfaces: ✅ Yes
+2. Why doesn't Java support multiple inheritance with classes?
+
+To avoid ambiguity caused by the Diamond Problem.
+
+3. How is multiple inheritance achieved in Java?
+
+By implementing multiple interfaces using the implements keyword.
+
+4. Can a class extend multiple classes?
+
+No. A class can extend only one class.
+
+5. Can a class implement multiple interfaces?
+
+Yes.
+
+interface A { }
+interface B { }
+
+class C implements A, B {
+
+}
