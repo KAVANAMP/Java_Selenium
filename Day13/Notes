@@ -1,0 +1,38 @@
+Day 13
+-------
+
+this keyword -> always represent the class/object
+
+2 types of variables
+1)class/instance variables
+2)local variables
+
+NOTE : in java there is no global variable concept
+
+static keyword
+--------------
+static is a keyword in Java. It means the member (variable or method) belongs to the class instead of individual objects.
+
+Static keyword can be applied for variables and methods.
+
+static variables->A static variable is shared by all objects of the class.
+static methods->A static method belongs to the class, not to an object.
+
+Non - static 
+------------
+A non-static member belongs to an object, not to the class.
+
+This means:
+
+Every object has its own copy of non-static variables.
+Non-static methods can access both static and non-static members.
+You must create an object to access non-static members.
+
+
+non-static variables->A non-static variable is declared without the static keyword.
+non-static methods->A non-static method belongs to an object. You must create an object before calling it.
+
+1) static methods can access static variables and methods without creating any object 
+2) static methods can access non-static stuff through object
+3) non-static methods can access everything directly
+4) if we access static variable or methods in another main method we have to specify the classname with the variable or method name
