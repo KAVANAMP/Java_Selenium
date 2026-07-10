@@ -1,0 +1,69 @@
+Day 12
+------
+
+POLYMORPHISM -> One thing can have many forms
+
+Shape-circle, square, triangle, rectangle.
+water--vapour, ice burge.
+
+we can achieve polymorphism using overloading  
+
+method overloading - same method name different parameters. -or- Method overloading means having multiple methods with the same name in the same class, but with different parameter lists (different number, type, or order of parameters).
+
+
+4 Rules are applicable
+----------------------
+1)Method names should be same
+2)number of parameters should be different
+3)Data type of parameters should be different
+4)Order of parameters should be different
+
+CONSTRUCTOR - constructor name should be same as the class name
+
+Constructor Overloading
+
+Constructor overloading means creating multiple constructors in the same class with different parameter lists.
+
+
+
+
+
+Interview Questions
+1. Can constructors be overloaded?
+
+Yes. A class can have multiple constructors with different parameter lists.
+
+2. Can methods be overloaded?
+
+Yes. As long as their parameter lists differ.
+
+3. Can constructors have a return type?
+
+No. Constructors never have a return type, not even void.
+
+4. Can constructors be inherited?
+
+No. Constructors are not inherited.
+
+5. Can constructors be static?
+
+No. Constructors cannot be static.
+
+6. Can methods be overloaded by changing only the return type?
+
+No. The parameter list must change.
+
+
+
+ENCAPSULATION ->wrapping up of data and methods in to single unit(class).
+
+1)All variables should be private
+2)For every method there should be 2 methods(get and set)
+3)variables can be operated only through methods
+
+
+Getter and Setter Methods in Java
+
+Getter and Setter methods are used to access and modify private variables of a class.
+
+# main method can be overload
