@@ -1,0 +1,61 @@
+Day 15
+------
+
+Method overriding:
+Method Overriding means a child class provides its own implementation of a method that is already defined in the parent class.
+
+It is an example of Runtime Polymorphism (Dynamic Method Dispatch).
+
+Syntax:-
+
+class Parent {
+
+    void display() {
+        // Parent implementation
+    }
+}
+
+class Child extends Parent {
+
+    @Override
+    void display() {
+        // Child implementation
+    }
+}
+
+
+Method Overriding:
+------------------
+
+1)Possible only in multiple class(inheritance).
+2)We should NOT change the signature(declaration) of the method but we should change.
+3)method names are same.
+4)belongs to inheritance.
+
+
+Method Overloading:
+-------------------
+
+1)Possible in single & multiple classes(inheritance)
+2)we should change the signature of the method
+3)method names are same.
+4)belongs to polymorphism
+
+
+final keyword
+-------------
+we can apply for variables, methods and class
+
+1)Variables - we cannot change the value of the variable(constant)
+2)Methods - we cannot override those methods in child classes
+3)class - we cannot extends the class or it avoids inheritance
+
+
+super keyword
+-------------
+1)The super keyword is used to refer to or invoke the the immediate parent class variable.
+2)Super keyword will be used to invoke the immediate parent class method
+3)it is applicable only for class not for interfaces
+
+
+
