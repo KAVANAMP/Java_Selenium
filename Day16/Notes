@@ -1,0 +1,66 @@
+Day 16
+--------
+
+Data abstraction
+----------------
+It is a process of hiding the implementation details and showing only the functionality to the user.
+
+
+ abstract can be achieved by using 2 methods 
+1)Abstract class
+2)Interface
+
+Interface
+---------
+1)An interface is a blue print of class
+2)Interface contains final and static variables.
+3)interface contains abstract methods.(also allowed default methods and static methods from java8 onwards)
+4)An abstract method is a method contains signature but not body(un-implemented method)
+5)Methods in interface are public
+6)interface supports the functionality of multiple inheritance.
+7)We can define interface with interface keyword.
+8)A class extends another class, an interface extends another interface but a class implements an interface.
+9)we can create object reference for interface but we cannot instantiate interface.
+
+
+class Syntax:- 
+class Test
+{
+var
+methods
+}
+
+interface Syntax:
+
+interface Test           ------ in interface we cannot implement the variables 
+{
+var
+methods
+}
+
+
+
+Abstract class
+---------------
+1)Abstract class can have abstract and non abstract methods.
+2)Abstract class doesn't support , multiple inheritance.
+3)this class can have final, non-final, static and non static variables.
+4)It can provide the implementation of inheritance
+5)abstract keyword is used to declare abstract class
+6)An abstract class can extend another java class and implement multiple java interfaces
+7)An abstract class can be extended using keyword "extends"
+8)An abstract class can have class members like private, protected etc..
+
+
+
+Interface
+---------
+1)Interface can have only abstract methods. Since Java 8, it can also have default and static methods.
+2)Interface supports multiple inheritance.
+3)Interface has only static and final variables.
+4)Interface can't provide the implementation of abstract methods (except default and static methods introduced in Java 8).
+5)The interface keyword is used to declare an interface.
+6)An interface can extend another Java interface only.
+7)An interface can be implemented using the implements keyword.
+8)Members of a Java interface are public by default.
+
