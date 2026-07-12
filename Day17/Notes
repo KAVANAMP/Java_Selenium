@@ -1,0 +1,48 @@
+Day 17
+-------
+
+Wrapper classes
+---------------
+A Wrapper Class is a class that wraps (converts) a primitive data type into an object.
+
+In Java, primitive data types like int, char, double, etc., are not objects. Wrapper classes allow these primitive values to be used where objects are required.
+
+int --->Integer
+float--->Float
+double--->Double
+char--->Character
+boolean--->Boolean
+
+
+NOTE: only  primitive classes have wrapper class 
+
+1)String--->int      (converting string to int) Integer.parseInt(String value)
+2)String---->double   (converting string to double)  Double.parseDouble(String value)
+3)String--->bool     (converting string to boolean) boolean.parseBoolean(String value)
+4)String--->char     Not possible
+
+
+
+any datatype---->string
+String.valueOf() --->convert all premitive data types into string format.
+
+When we work with collections we are using collection classes.
+ArrayList arr=new ArrayList();
+
+ArrayList<Integer> arr=new ArrayList<Integer>(); //valid
+
+ArrayList<int> arr=new ArrayList<int>(); //not valid
+
+
+Packages & Access Modifiers
+1)built-in packages
+2)user defined packages
+
+Access modifiers: defines scope of variables and methods
+-----------------
+
+1)public - A public member can be accessed from anywhere in the program.
+2)protected - outside the package we can access but only through inheritance
+3)default - Access only within the same package
+4)private - Access only within the class not outside other class
+
