@@ -1,0 +1,15 @@
+Day 18
+-------
+
+Type Casting
+-----------
+Converting type of data
+
+types
+-----
+1)Upcasting /widening
+2)Downcasting /Narrowing
+
+Child c = new Child(); 
+
+Parent p = new Child(); // used for upcasting 
