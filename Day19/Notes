@@ -1,0 +1,47 @@
+
+Day19
+------
+
+Exception handling
+------------------
+Exception is an event which will cause program termination.
+
+Errors
+------
+
+1)syntax error
+2)logical error 
+
+
+types of exceptions
+-------------------
+
+1)Checked exceptions
+The exceptions which are identified by java compiler.
+    ex: interuptedException
+        FileNotFoundException
+        IOException etc...
+
+2)Un-Checked Exceptions
+The exceptions which are not identified by java compiler.
+     ex: ArithmaticException
+         NullPointerException
+         ArrayIndexOutOfBoundException etc.....
+
+
+try
+{
+risky code
+}
+catch(ArithmeticException e)
+{
+statements
+}
+
+
+try
+{
+statements
+}
+catch()
+{
