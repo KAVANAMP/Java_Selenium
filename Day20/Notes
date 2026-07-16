@@ -1,0 +1,148 @@
+Day 20
+-------
+
+Collections
+-----------
+The Collection Interface is the root interface of the Java Collections Framework (except Map).
+Collection -Used to represent group of elements/objects/data into single entity.
+"collection" is an interface available in java.util
+
+Java Collections Framework (Hierarchy)
+
+                    Iterable
+                        │
+                        ▼
+                  Collection (Interface)
+          ┌─────────────┼─────────────┐
+          ▼             ▼             ▼
+        List          Set          Queue
+          │             │             │
+   ┌──────┼──────┐   ┌──┼─────┐     ┌──┼─────┐
+   ▼      ▼      ▼   ▼  ▼     ▼     ▼        ▼
+ArrayList LinkedList Vector HashSet LinkedHashSet PriorityQueue ArrayDeque
+                   │
+                   ▼
+                Stack
+
+Map (Separate Interface)
+      │
+ ┌────┼───────────────┐
+ ▼    ▼               ▼
+HashMap LinkedHashMap TreeMap
+
+LIST:
+--------
+It is used to store an ordered collection of elements, where:
+
+Elements are stored in the order they are inserted.
+Duplicate elements are allowed.
+Elements can be accessed using their index.
+
+1)ArrayList :
+Uses a dynamic array internally.
+Fast for searching and random access.
+Slower for insertion/deletion in the middle.
+
+1)Heterogenious data - allowed
+2)Insertion order - preserved(Index)
+3)Duplicate elements - allowed
+4)multiple nulls - allowed
+
+
+2)LinkedList
+Uses a doubly linked list.
+Faster insertion and deletion.
+Slower random access.
+
+syntax:List<String> list = new LinkedList<>();
+
+
+3)Vector
+Similar to ArrayList.
+Synchronized (thread-safe).
+Slower due to synchronization.
+
+Syntax:List<String> list = new Vector<>();
+
+
+SET:
+------
+The Set is a child interface of the Collection interface.
+
+It is used to store unique elements, which means duplicate values are not allowed.
+
+It belongs to the java.util package.
+
+Features of Set:
+ Does not allow duplicate elements.
+ Stores unique elements only.
+ Dynamic in size.
+ Different implementations have different ordering behavior.
+ No index-based access.
+
+Set<String> set = new HashSet<>();
+
+Types of Set
+1)HashSet
+
+Features
+Does not maintain insertion order.
+Allows one null value.
+Fastest among Set implementations.
+Uses a Hash Table internally.
+
+2)LinkedHashSet
+
+Features
+Maintains insertion order.
+Allows one null.
+Slightly slower than HashSet.
+
+3)TreeSet
+
+Features
+Stores elements in sorted (ascending) order.
+Does not allow null.
+Slower than HashSet because it uses a Red-Black Tree.
+
+MAP:
+-----
+A Map is an interface in the Java Collections Framework used to store data as key-value pairs.
+
+Each key is unique, and it maps to a single value.
+
+Note: Map is not a child of the Collection interface.
+
+Features of Map
+Stores data in key-value pairs.
+Keys must be unique.
+Values can be duplicated.
+Each key maps to only one value.
+Dynamic in size.
+
+
+Types of Map
+------------
+1. HashMap
+
+Features
+Most commonly used.
+Does not maintain insertion order.
+One null key is allowed.
+Multiple null values are allowed.
+Fastest for searching, adding, and removing.
+
+2. LinkedHashMap
+
+Features
+Maintains insertion order.
+One null key allowed.
+Multiple null values allowed.
+Slightly slower than HashMap.
+
+3. TreeMap
+Features
+Stores keys in ascending order.
+Does not allow null keys.
+Allows multiple null values.
+Internally uses a Red-Black Tree.
