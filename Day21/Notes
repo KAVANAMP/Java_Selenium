@@ -1,0 +1,53 @@
+Day 21
+------
+
+Selenium WebDriver
+------------------
+
+what is selenium webdriver?
+1)WebDriver is one of the component in selenium
+2)WebDriver is a java interface
+3)WebDriver is an API(Application Programming Interface)
+
+WebDriver(I)---RemoteDriver(C)---->ChromeDriver,FirefoxDriver,EdgeDriver ect.......
+
+
+
+
+Environment setup
+-----------------
+1)Downloading jars files and attaching them to Java project(Manually).
+---
+->created new java project
+->downloaded webdriver jars(.zip) and extracted
+->attach jars to java project
+
+
+
+2)Creating Maven Project(Recommended)
+
+-->Created a new Maven project in eclipse
+-->added webdriver dependency in pom.xml-->updated
+
+pom.xml---->dependency
+https://mvnrepository.com/
+
+
+
+
+1. What is an Interface in Java?
+
+An interface is a blueprint of a class. It contains method declarations (and can also contain default and static methods since Java 8), but it cannot be instantiated.
+
+An interface tells a class what to do, but the implementing class decides how to do it.
+
+
+2. Why is WebDriver an interface?
+
+Because Selenium needs a common API for different browser drivers. Each browser (Chrome, Firefox, Edge, etc.) implements the methods differently while exposing the same set of operations.
+
+
+3. Why do we write WebDriver driver = new ChromeDriver();?
+It supports runtime polymorphism.
+Makes it easy to switch browsers.
+Promotes loose coupling and maintainable code.
