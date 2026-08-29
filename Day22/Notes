@@ -1,0 +1,46 @@
+Day-22
+---------
+
+Locators
+---------
+1.We can identify various elements on the web using Locators.
+2.Locators are address that identify a web element uniquely within the page.
+
+
+ types of Locators:
+1)Locators
+*id
+*name
+*Linktext or partialLinkText
+*Class Name  -->used for group of web elements.
+*TagName    -->used for group of web elements.
+these are used to identify specific web elements.
+
+
+findElement() --->single webelement
+findElements() --->multiple webelements
+
+Scenario 1: Locator matching with single web element
+findElement(loc) --->single web element   WebElement
+findElements(loc) --->single web element   List<WebElement>
+
+
+Scenario 2: Locator matching with multi web element
+findElement(loc) --->single web element   WebElement
+findElements(loc) --->single web element   List<WebElement>
+
+Scenario 3: Locator is not matching with any element
+findElement(loc) ---> No suchelement Exception
+findElements(loc) ---> it will not throw any exception.returns 0
+
+
+2)Customized locators
+*CSS Selector
+->Tag and id
+->Tag and Class
+->Tag and attribute
+->Tag class and attribute
+
+*XPath
+->Absolute XPath
+->Relative XPath
