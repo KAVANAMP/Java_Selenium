@@ -1,0 +1,16 @@
+Day 23
+--------
+
+CSS Selectors -->for designing web pages
+-------------
+It is one of the most useful locators after id, name, and className.
+
+*tag id                tag#id ->if id is available
+*tag class             tag.classname
+*tag attribute         tag[attribute="value"] -> if id and classname is not available
+*tag class attribute   tag.classname[attribute="value"]
+
+
+# means ID.
+. means class.
+
