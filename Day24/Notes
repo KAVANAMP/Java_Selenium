@@ -1,0 +1,103 @@
+Day 24
+---------
+
+X-Path
+-------
+It is representing an address of an element, it is derived from XML
+
+DOM -> Document Object Model
+*Based on DOM Xpath will work
+
+2 types of xpath
+------------------
+1)Absolute xpath(full xpath)          -> /html/body/div[2]/div/div/form/div[1]/div/input
+It navigate from HTML to destination path
+
+2)Relative xpath(partial xpath)       ->//*[@id="username"]
+It directly jump to the element
+
+
+Which xpath will be preferred?
+Relative xpath.
+
+Difference btwn Absolute & Relative xpaths?
+------------------------------------------
+
+1)Absolute xpath starts with /       ---->represents root node
+  Relative xpath starts with // 
+
+2) Absolute xpath do not use attributes
+   Relative xpath works with attribute
+
+3)Absolute xpath traverse through each node till it finds element
+  Relative xpath directly jump and find element by using attribute.
+
+
+
+RELATIVE XPATHS
+-----------------
+1)Automatically - Devtools,selectorshub
+2)Manually(own xpath)
+
+syntax:
+-------
+//tagname[@attribute='value']
+//*[@attribute='value']
+here tagname is not optional we replace it by *
+
+ex: //img[@title='MacBook'] 
+if we use "" we have to write like this  -> //img[@title=/"MacBook"/]
+
+Xpath with single attribute
+------
+ex: driver.findElement(By.xpath("//*[@id='username']")).sendKeys("Kavana");
+
+Xpath with multiple attribute
+ex: input[@id='username'][@name='username'] -we can write it manually
+
+
+
+xpath with 'and' 'or' operators:
+----------------------------
+
+and operator -> //input[@id='username' and @name='username'] -->both attribute should match 
+or opearator -> //input[@id='username' or @name='username']  -->here anyone attribute should be match
+
+
+
+xpath with inner text - text()
+-----------------------------
+
+//a[text()='Desktops']
+
+A linked text can be a inner text but not all inner text be linked text 
+for example:
+
+<a href="https://xyz.com">Click me</a>
+
+linktext=yes
+innertext=yes
+
+<div>Welcome</div>
+linktext=no
+innertext=yes
+
+xpath with contains()
+----------------------
+
+driver.findElement(By.xpath("//label[contains(text(),'User')]"));
+
+
+handling dynamic attributes
+-----------------------------
+
+//*[@id='start' or @id='stop']
+//*[contains(@id,'st')]
+//*[starts-with(@id,'st')]
+
+Chained xpath->combination of relative and absolute xpaths
+-------------
+ex: div[@id='logo']/a/img
+
+
+
