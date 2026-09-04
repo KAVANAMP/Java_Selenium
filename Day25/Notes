@@ -1,0 +1,16 @@
+Day 25
+----------
+
+xpath axes
+----------
+
+
+* Self: `self` means selecting the current element itself.
+* Parent: `parent` means moving one level up to the immediate parent element.
+* Child: `child` means moving one level down to the immediate child element.
+* Ancestor: `ancestor` means moving up through all parent levels.
+* Descendant: `descendant` means moving down through all child levels.
+* Following: `following` means selecting elements that come after the current element anywhere in the page.
+* Preceding: `preceding` means selecting elements that come **before the current element anywhere in the page.
+* Following-sibling: `following-sibling` means selecting an element that comes after the current element with the same parent.
+* Preceding-sibling: `preceding-sibling` means selecting an element that comes before the current element with the same parent.
