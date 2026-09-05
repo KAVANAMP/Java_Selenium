@@ -1,0 +1,38 @@
+Day 26
+-------
+
+1)get methods
+2)conditional methods
+3)browser methods
+4)navigational methods
+5)wait methods
+
+
+1)get methods - we can access these methods through webdriver instance
+--------------
+get(url) - opens the url on the browser
+getTitle() - returns the title of the page
+getCurrentUrl() - returns URL of the page
+getPageSource() - returns the source code of the page
+getWindowHandle() - returns ID of the single browser window
+getWindowHandles() - returns ID's of the multiple browser windows
+
+
+
+getWindowHandles() : To handle noSuchElement exception we are using Thread.sleep(ms)
+
+
+to close windows using automation by using
+driver.close() -> close single browser window at a time
+driver.quit() -> close multiple browser window at a time
+
+
+
+
+2)conditional methods - Access these commands through WebElement
+---------------------
+returns Boolean value(true/false)
+
+isDisplayed() - we can check the display status of the element
+isEnabled()  - we can check enable/disable status of the element
+isSelected() - we can use to check the element is selected or not
