@@ -1,0 +1,21 @@
+Day 29
+------
+
+Checkboxes
+-----------
+selecting last 3 checkboxes
+
+formula : total no of checkboxes-how many checkboxes you want to select = starting index
+
+
+Alerts/popups:
+---------------
+1.Normal Alert
+2.Confirmation Alert
+3.Prompting Alert
+
+
+driver.switchTo().alert().accept()
+driver.switchTo().alert().dismiss()
+driver.switchTo().alert().getText()
+driver.switchTo().alert().sendKeys(Text)
