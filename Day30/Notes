@@ -1,0 +1,34 @@
+Day-30
+--------
+
+frames/iframes
+---------------
+
+switchTo iframe 3 methods
+---------------------------
+1.driver.switchTo().frame(name)
+2.driver.switchTo().frame(id)
+3.driver.switchTo().frame(WebElement)
+4.driver.switchTo().frame(index)
+
+
+we cannot directly switch to another page so we are using 
+-->driver.switchTo().defaultContent();
+
+
+3 types of switching methods:
+-----------------------------
+
+1)browser windows
+ driver.switchTo.window(windowID/window handle)
+
+2)alerts
+driver.switchTo.alert()
+driver.switchTo.accept()
+driver.switchTo.dismiss()
+
+3)frames
+driver.switchTo.frame(id)
+driver.switchTo.frame(name)
+driver.switchTo.frame(WebElement)
+
